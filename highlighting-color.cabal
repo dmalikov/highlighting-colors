@@ -1,0 +1,20 @@
+Name:                   highlighting-color
+Version:                0.1
+Description:            Utility for highlighting color in #rrggbb format in html
+License:                MIT
+License-file:           LICENSE
+Author:                 Dmitry Malikov
+Maintainer:             Dmitry Malikov <malikov.d.y@gmail.com>
+Build-type:             Simple
+Cabal-version:          >= 1.6
+
+Executable              highlighting-color
+  Main-is:              Main.hs
+  Build-Depends:        base >= 4 && < 5,
+                        regex-tdfa >= 1.1.8,
+                        regex-compat >= 0.95.1,
+                        HStringTemplate >= 0.7.0,
+                        data-default >= 0.5.0,
+                        optparse-applicative >= 0.5.2.1,
+                        template-haskell
+  HS-Source-Dirs:       src
